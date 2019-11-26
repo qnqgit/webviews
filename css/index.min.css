@@ -504,6 +504,15 @@ div.card-body {
   .logoIcon {
     height: 60px !important;
   }
+
+  .logo_txt {
+    font-size: 1.4rem !important;
+  }
+}
+@media (max-width: 375px) {
+  .logo_txt {
+    font-size: 0.93rem !important;
+  }
 }
 
 .logoIcon {
