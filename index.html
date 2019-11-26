@@ -140,7 +140,6 @@
         <!-- 缩略导航 -->
         <!-- swiper-pagination-custom -->
         <div class="d-md-flex justify-content-md-center jjfa_nav solution-pagination-custom  d-none ">
-            /
             <div class="position-relative">院区运营</div>
             <div class="position-relative">医疗信息化</div>
             <div class="position-relative">电商体系</div>
@@ -603,8 +602,8 @@
             var swiper = new Swiper('.solution-swiper', {
 							loop: true,
 							autoplay: {
-									delay: 2000,
-									disableOnInteraction: false,//用户操作swiper之后，是否禁止autoplay。默认为true：停止。
+								delay: 2000,
+								disableOnInteraction: false,//用户操作swiper之后，是否禁止autoplay。默认为true：停止。
 							},
 							pagination: {
 									el: '.solution-pagination-custom',
@@ -616,11 +615,11 @@
 											// console.log(current,total);
 											var text = ["院区运营", "医疗信息化", "电商体系", "新消费大数据分析"]
 											for (var i = 1; i <= total; i++) {
-													if (current == i) {
-															_html += '<div class="position-relative active">' + text[i - 1] + '</div>';
-													} else {
-															_html += '<div class="position-relative">' + text[i - 1] + '</div>';
-													}
+												if (current == i) {
+														_html += '<div class="position-relative active">' + text[i - 1] + '</div>';
+												} else {
+														_html += '<div class="position-relative">' + text[i - 1] + '</div>';
+												}
 											}
 											// $('.solution-pagination-custom ').html(_html)
 											return _html;//返回所有的页码html
@@ -630,10 +629,10 @@
 
 
             $('.solution-pagination-custom ').on('click', 'div', function () {
-                if ($(this).index() == 0) {
-                    window.location.href = window.location.href + './html/solution/'
-                }
-                swiper.slideTo($(this).index() + 1, 500, false);//切换到第一个slide，速度为1秒
+							// if ($(this).index() == 0) {
+							// 		window.location.href = window.location.href + './html/solution/'
+							// }
+							swiper.slideTo($(this).index() + 1, 500, false);//切换到第一个slide，速度为1秒
 
             })
 
