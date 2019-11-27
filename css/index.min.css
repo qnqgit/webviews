@@ -513,6 +513,11 @@ div.card-body {
   .logo_txt {
     font-size: 0.93rem !important;
   }
+  .section .section_title {
+    color: #101010;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
 }
 
 .logoIcon {
