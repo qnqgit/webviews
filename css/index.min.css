@@ -250,7 +250,7 @@ div.card {
     transform: translateY(-50%);
   }
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .jd_team .team_list {
     padding: 20px 50px 50px;
   }
@@ -295,8 +295,8 @@ div.card {
   padding-bottom: 84px;
   background: url(../imgs/jd_cp_bg.jpg) no-repeat;
   background-size: cover;
-}
-@media (max-width: 768px) {
+} */
+/* @media (max-width: 768px) {
   .jd_cp img.right_icon {
     margin: 0 auto;
   }
@@ -413,7 +413,7 @@ div.card {
   height: 100%;
   transform: translateY(-50%);
   background: #e3e1e3;
-}
+} */
 .article-detail {
   font-size: 15px;
   color: #3d464d;
