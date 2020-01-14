@@ -494,22 +494,24 @@ div.card-body {
 .successfulCase_list {
   padding-bottom: 100px;
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .successful-container .card-title {
     font-size: 14px;
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .logoIcon {
     height: 60px !important;
   }
 
   .logo_txt {
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
   }
 }
-@media (max-width: 375px) {
+
+@media screen and (min-device-width : 375px) and (max-device-width : 667px)  {
+
   .logo_txt {
     font-size: 0.93rem !important;
   }
@@ -517,6 +519,28 @@ div.card-body {
     color: #101010;
     font-size: 1.2rem;
     font-weight: 600;
+  }  
+}
+
+@media screen and (min-width: 320px) {
+  .logo_txt {
+    font-size: 0.93rem !important;
+  }
+  .section .section_title {
+    color: #101010;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  /* 解决方案页面 */
+  
+  .tab{
+    font-size: 0.8rem;
+  }
+
+  .tab.active {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 700;
   }
 }
 
@@ -695,6 +719,7 @@ div.card-body {
   .solution-container .view-md-btn {
     margin-top: 100px;
   }
+
 }
 @media (max-width: 992px) {
   .service-container .server-list,
@@ -714,7 +739,29 @@ div.card-body {
     margin-right: 0;
     text-indent: 2rem;
   }
+
 }
+@media screen and (min-width: 1024px) {
+  .logoIcon {
+    height: 60px !important;
+  }
+
+  .logo_txt {
+    font-size: 1.6rem !important;
+  }
+   /* 解决方案页面 */
+  .tab{
+    font-size: 1.3rem;
+  }
+ 
+  .tab.active {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+}
+
 .service-container .server-list li,
 .solution-container .server-list li {
   position: relative;
@@ -730,4 +777,10 @@ div.card-body {
 }
 .EZView {
   max-width: 100% !important;
+}
+
+
+.btn a {
+  color: white;
+  font-size: 14px;
 }

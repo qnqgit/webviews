@@ -10,15 +10,75 @@
     <link rel="bookmark" href="../../favicon.ico" />
     <link rel="stylesheet" href="../../css/common/Bootstrap.min.css">
     <link rel="stylesheet" href="../../css/common/animate.min.css">
-    <link rel="stylesheet" href="../../css/index.min.css">
+    <link rel="stylesheet" href="../../css/index.min.css">  
     <link rel="stylesheet" href="../../css/common/common.min.css">
     <link rel="stylesheet" href="../../css/common/swiper.min.css">
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .box {
+        width: 100%;
+        /* height: 100%; */
+    }
+    .header {
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+    }
+    /* .tab.active span {
+        display: block;
+        width: 60px;
+        border-bottom: 2px solid black;
+        position: relative;
+        bottom: 0px;
+        left: 38%;
+    } */
+    .tab {
+        flex: 1;
+        font-size: 16px ;
+        text-align: center;
+        margin-top: 20px    ;
+        margin-bottom: 20px;
+    }
 
+    .tab.active {
+        color: black;
+        font-size: 16px;
+        font-weight: 700;
+        /* border-bottom: 2px solid black; */
+    }
+    .tab:hover {
+        cursor: pointer;
+    }
+
+    .cont {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        /* border: 1px solid; */
+    }
+
+    .panel {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+    .zhcs img {
+        width: 66%;
+        height: 50%;
+        margin-bottom: 10px;
+    }
 </style>
+
 <!--[if IE]>
     <script src="http:/./html5shiv.googlecode.com/svn/trunk./html5.js"></script>
   <![endif]-->
+
 
 <body>
     <div class="container_outwrap container-fluid headerWrapper navbarBox">
@@ -26,7 +86,8 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
                 <a href="javascript:(void:0)">
                     <img src="../../imgs/logo.png" alt="众诚兴林" class="logoIcon">
-                    <span class="logo_txt" style="font-size:  1.1rem; color: black; vertical-align: middle; font-weight: 700;">北京众诚兴林科技有限公司</span>
+                    <span class="logo_txt"
+                        style="font-size:  1.1rem; color: black; vertical-align: middle; font-weight: 700;">北京众诚兴林科技有限公司</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,114 +117,77 @@
         </div>
     </div>
 
-    <section class="section container solution-container">
-        <ul class="list-unstyled server-list">
-            <li class="media wow fadeIn">
-                <div class="row">
-                    <img class="align-self-start mr-3 media-img col-lg-6 col-12" src="../../imgs/solution/yjzh_dn.png"
-                        alt="Generic placeholder image">
-                    <div class="media-body mr-3 col-lg-6 col-12">
-                        <h5 class="mt-0">应急指挥</h5>
-                        <p>科技综合服务管理系统，由众诚兴林历经
-                            打造的集专业孵化培训能力、提升自身服务管理水平、电子屏广告传播管理以及业务在线化管理于一体的综合服务管理系统。致力于打通园区与企业的互动，深入整合第三方服务，提高服务企业客户的效能，吸引优质企业和有潜力的科技创新型企业，提升物业在周边地段区域的持续竞争力…
-                        </p>
-                        <button type="button"
-                            class="btn view-md-btn btn-primary btn-lg d-none d-lg-block float-right js-view-case"><i
-                                class="iconfont icon-tupian" style="font-size:20px;padding-right:2px;"></i>查看方案</button>
-                        <button type="button"
-                            class="btn view-sm-btn btn-primary btn-sm d-block d-lg-none float-right js-view-case"><i
-                                class="iconfont icon-tupian" style="padding-right:2px;"></i>查看方案</button>
-                        <!-- 方案图片 -->
-                        <section class="js-view-content"
-                            style="opacity:0;position: absolute;z-index:-10000;right:-99999px;position: absolute;z-index:-10000;margin-right:-99999px">
-                            <!-- <button class="delete">X</button> -->
-                            <img src="http://img0.imgtn.bdimg.com/it/u=3749811019,2793290739&fm=26&gp=0.jpg"
-                                alt="js Image" href="https://eloquentjavascript.net/Eloquent_JavaScript.pdf"
-                                style="cursor: pointer;">
-                        </section>
-                        <!-- 方案图片 -->
-                    </div>
+    <div class="box">
+        <div class="header">
+            <div class="tab active">智慧城市</div>
+            <div class="tab">智慧林业</div>    
+            <div class="tab">应急指挥</div>
+            <div class="tab">森林防火</div>
+        </div>
+        <div class="cont">
+            <div class="panel active">
+                <h5>智慧城市时空云平台
+                </h5>
+                <div class="zhcs">
+                    <p style="text-indent: 2em; text-align: left;">
+                        智慧城市时空云平台在全面整合城市已有的信息资源基础上，打造一个充分感知、互联互通、融合共享、业务协同、
+                        按需服务的一站式时空云服务平台，实现城市数据软件、管理、服务和应用的集成，解决城市信息资源管理、
+                        社会信息资源管理和城市系统部门互联互通、协同共享等问题，为建设广泛互联、深度应用、
+                        信息服务的智慧城市提供基础支撑平台，提高城市精细化管理水平，提升城市治理能力。
+                    </p>
+                    <img src="../../imgs/solution/jjfa_zhcs-2.png" alt="">
+                    <img src="../../imgs/solution/zhcs1-2.png" alt="">
+                    <img src="../../imgs/solution/jjfa_zhcs1-2.png" alt="">
+                    <img src="../../imgs/solution/jjfa_zhcs2-2.png" alt="">
                 </div>
-            </li>
-            <li class="media wow fadeIn">
-                <div class="row">
-                    <img class="align-self-start mr-3 media-img col-lg-6 col-12" src="../../imgs/solution/slfh.png"
-                        alt="Generic placeholder image">
-                    <div class="media-body mr-3 col-lg-6 col-12">
-                        <h5 class="mt-0">森林防火监测</h5>
-                        <p>技术孵化（产业路由器）：通过互联网产品、运营、技术服务，对传统产业创业公司进行互联网赋能；把互联网思维和打法融合到传统产业供应链、产业链结构和运作流程，替换或者取消部分流通环节，从而优化行业效率、降低成本，最终升级改造相关传统产业。技术孵化（产业路由器）：通过互联网产品、运营、技术服务，对传统产业创业公司进行互联网赋能；把互联网思维和打法融合到传统产业供应链、产业链结构和运作流程，替换或者取消部分流通环节，从而优化行业效率、降低成本，最终升级改造相关传统产业。
-                        </p>
-                        <button type="button"
-                            class="btn view-md-btn btn-primary btn-lg d-none d-lg-block float-right js-view-case"><i
-                                class="iconfont icon-tupian" style="font-size:20px;padding-right:2px;"></i>查看方案</button>
-                        <button type="button"
-                            class="btn view-sm-btn btn-primary btn-sm d-block d-lg-none float-right js-view-case"><i
-                                class="iconfont icon-tupian" style="padding-right:2px;"></i>查看方案</button>
-                        <!-- 方案图片 -->
-                        <section class="js-view-content"
-                            style="opacity:0;position: absolute;z-index:-10000;right:-99999px;position: absolute;z-index:-10000;margin-right:-99999px">
-                            <!-- <button class="delete">X</button> -->
-                            <img src="http://img0.imgtn.bdimg.com/it/u=3749811019,2793290739&fm=26&gp=0.jpg"
-                                alt="js Image" href="https://eloquentjavascript.net/Eloquent_JavaScript.pdf"
-                                style="cursor: pointer;">
-                        </section>
-                        <!-- 方案图片 -->
-                    </div>
+            </div>
+            <div class="panel">
+                <h5>林业信息化领航者
+                </h5>
+                <div class="zhcs">
+                    <p style="text-indent: 2em; text-align: left;">
+                        智慧林业信息化大数据平台建设是指充分利用云计算、物联网、大数据、移动互联网等新一代信息技术，
+                        通过感知化、物联化、智能化的手段，建设成林业立体感知、管理协同高效、生态价值凸显、
+                        服务内外一体的智慧林业大数据服务平台，全面提升对森林各种资源进行智能化管控水平。
+                    </p>
+                    <img src="../../imgs/solution/jjfa_zhly-2.png" alt="">
+                    <img src="../../imgs/solution/jjfa_zhly0-2.png" alt="">
+                    <img src="../../imgs/solution/jjfa_zhly1-2.png" alt="">
+                    <img src="../../imgs/solution/jjfa_zhly2-2.png" alt="">
                 </div>
-            </li>
-            <li class="media wow fadeIn">
-                <div class="row">
-                    <img class="align-self-start mr-3 media-img col-lg-6 col-12" src="../../imgs/solution/zhcs.png"
-                        alt="Generic placeholder image">
-                    <div class="media-body mr-3 col-lg-6 col-12">
-                        <h5 class="mt-0">智慧城市信息平台</h5>
-                        <p>技术孵化（产业路由器）：通过互联网产品、运营、技术服务，对传统产业创业公司进行互联网赋能；把互联网思维和打法融合到传统产业供应链、产业链结构和运作流程，替换或者取消部分流通环节，从而优化行业效率、降低成本，最终升级改造相关传统产业。技术孵化（产业路由器）：通过互联网产品、运营、技术服务，对传统产业创业公司进行互联网赋能；把互联网思维和打法融合到传统产业供应链、产业链结构和运作流程，替换或者取消部分流通环节，从而优化行业效率、降低成本，最终升级改造相关传统产业。
-                        </p>
-                        <button type="button"
-                            class="btn view-md-btn btn-primary btn-lg d-none d-lg-block float-right js-view-case"><i
-                                class="iconfont icon-tupian" style="font-size:20px;padding-right:2px;"></i>查看方案</button>
-                        <button type="button"
-                            class="btn view-sm-btn btn-primary btn-sm d-block d-lg-none float-right js-view-case"><i
-                                class="iconfont icon-tupian" style="padding-right:2px;"></i>查看方案</button>
-                        <!-- 方案图片 -->
-                        <section class="js-view-content"
-                            style="opacity:0;position: absolute;z-index:-10000;right:-99999px">                         
-                            <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1074042379,1825465030&fm=200&gp=0.jpg"
-                                alt="js Image" href="https://eloquentjavascript.net/Eloquent_JavaScript.pdf" index="3"
-                                style="cursor: pointer;">
-                        </section>
-                        <!-- 方案图片 -->
-                    </div>
+            </div>
+            <div class="panel">
+                <h5>多媒体通讯应急指挥调度平台
+                </h5>
+                <div class="zhcs">
+                    <p style="text-indent: 2em; text-align: left;">
+                        多媒体实时通讯应急指挥调度系统，利用云计算、大数据、物联网、多媒体与3S等关键技术融合在一起，
+                        建立基于一张图的应急指挥系统，实现从总指挥中心，分中心，巡护端，车辆端，
+                        手机端等综合实时通讯应急调度指挥系统，建立立体化，网络化，精准化的新型应急指挥模式，
+                        全面提升移动、协同应急指挥效率，全面保障人民群众生命和财产安全，提升城市综合治理水平。
+                    </p>
+                    <img src="../../imgs/solution/jjfa_yjzh2-2.png" alt="">
+                    <img src="../../imgs/solution/jjfa_yjzh0-2.png" alt="">
+                    <img src="../../imgs/solution/yjzh111-2.png" alt="">
                 </div>
-            </li>
-            <li class="media wow fadeIn">
-                <div class="row">
-                    <img class="align-self-start mr-3 media-img col-lg-6 col-12" src="../../imgs/solution/sl.png"
-                        alt="Generic placeholder image">
-                    <div class="media-body mr-3 col-lg-6 col-12">
-                        <h5 class="mt-0">智慧林业信息化平台</h5>
-                        <p>技术孵化（产业路由器）：通过互联网产品、运营、技术服务，对传统产业创业公司进行互联网赋能；把互联网思维和打法融合到传统产业供应链、产业链结构和运作流程，替换或者取消部分流通环节，从而优化行业效率、降低成本，最终升级改造相关传统产业。技术孵化（产业路由器）：通过互联网产品、运营、技术服务，对传统产业创业公司进行互联网赋能；把互联网思维和打法融合到传统产业供应链、产业链结构和运作流程，替换或者取消部分流通环节，从而优化行业效率、降低成本，最终升级改造相关传统产业。
-                        </p>
-                        <button type="button"
-                            class="btn view-md-btn btn-primary btn-lg d-none d-lg-block float-right js-view-case"><i
-                                class="iconfont icon-tupian" style="font-size:20px;padding-right:2px;"></i>查看方案</button>
-                        <button type="button"
-                            class="btn view-sm-btn btn-primary btn-sm d-block d-lg-none float-right js-view-case"><i
-                                class="iconfont icon-tupian" style="padding-right:2px;"></i>查看方案</button>
-                        <!-- 方案图片 -->
-                        <section class="js-view-content"
-                            style="opacity:0;position: absolute;z-index:-10000;right:-99999px">  
-                            <img alt="js Image" href="https://eloquentjavascript.net/Eloquent_JavaScript.pdf"
-                                style="cursor: pointer;">
-                        </section>
-                        <!-- 方案图片 -->
-                    </div>
+            </div>
+            <div class="panel">
+                <h5>森林防火预警系统
+                </h5>
+                <div class="zhcs">
+                    <p style="text-indent: 2em; text-align: left;">
+                        森林防火视频监控预警系统-采用图像识别AI技术、红外热像探测技术、
+                        边缘监测算法技术，对森林火灾及时预警报警，实现火灾精准定位，及时扑救，实现“打早，大小，打了”的目的，
+                        从根本上保护森林资源不受火灾破坏，让天更蓝，水更青，山更绿。
+                    </p>
+                    <img src="../../imgs/solution/jjfa_slfh0-2.png" alt="">
+                    <img src="../../imgs/solution/jjfa_slfh3-2.png" alt="">
+                    <img src="../../imgs/solution/jjfa_slfh1-2.png" alt="">
+                    <img src="../../imgs/solution/jjfa_slfh2-2.png" alt="">
                 </div>
-            </li>
-        </ul>
-
-    </section>
-
+            </div>
+        </div>
+    </div>
 
     <!-- 联系我们 -->
     <footer class="pt-4  pt-md-5  container-fluid jd_footer">
@@ -191,9 +215,9 @@
                             <li class="float-left text-center"> <img src="../../imgs/gzh.jpg" alt="">
                                 <div>公众号</div>
                             </li>
-                            <li class="float-left text-center"> <img src="../../imgs/xcx.png" alt="">
+                            <!-- <li class="float-left text-center"> <img src="../../imgs/xcx.png" alt="">
                                 <div>小程序</div>
-                            </li>
+                            </li> -->
                         </ul>
                     </ul>
                 </div>
@@ -249,16 +273,23 @@
         })
 
 
-        $(".js-view-case").on("click", function () {
-            // console.log($('#js-view-case'))
-            console.log($(this));
-            $(this).siblings(".js-view-content").children("img").EZView()
-            $(this).siblings(".js-view-content").children("img:first-child").click()
-            // $('#js-view-case').click();
-            // $($(this) +'.js-view-content img').EZView();
-            // $($(this) + ".js-view-content img:first-child").click();
+        $('.tab').on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active')//给当前点击元素添加active，移除兄弟元素的active
+            $(this).parents('.box')
+                .find('.panel')
+                .eq($(this).index())
+                .addClass('active')
+                .siblings()
+                .removeClass('active')//利用当前tab的index值寻找父元素下index值相同的panel并添加active，移除其他panel 的active
         })
-
-
+        // $('span').on('click', function () {
+        //     $(this).addClass('active').siblings().removeClass('active')//给当前点击元素添加active，移除兄弟元素的active
+        //     $(this).parents('.box')
+        //         .find('.panel')
+        //         .eq($(this).index())
+        //         .addClass('active')
+        //         .siblings()
+        //         .removeClass('active')//利用当前tab的index值寻找父元素下index值相同的panel并添加active，移除其他panel 的active
+        // })
     });
 </script>
